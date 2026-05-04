@@ -1,16 +1,81 @@
-# React + Vite
+# 🚀 HireMind AI
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> Voice-based AI interview platform for realistic, interactive, and feedback-driven interview preparation.
 
-Currently, two official plugins are available:
+## 📌 Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+AI Interview Agent is a full-stack, AI-powered interview platform that simulates real-world technical and behavioral interviews using **voice-based conversations**.
 
-## React Compiler
+It enables users to practice interviews, receive **instant AI feedback**, and track their performance over time — replicating a real interviewer experience.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## ✨ Key Features
 
-## Expanding the ESLint configuration
+- 🎙️ **Voice-Based Interviews (OpenRouter)**
+  - Real-time conversational interviews with AI interviewer
+  - Natural speech interaction instead of text-based Q&A
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- 🧠 **AI-Driven Questioning & Feedback**
+  - Dynamic question generation based on role, experience, and tech stack
+  - Instant evaluation and structured feedback
+
+- 🔐 **Authentication & User Management**
+  - Secure login/signup using Firebase (Email + Google OAuth)
+
+- 📊 **Interview History Tracking**
+  - Store and review past interviews for continuous improvement
+
+- 🎯 **Custom Interview Configuration**
+  - Role-based interviews (Frontend, Backend, Full-stack)
+  - Experience level selection (Junior → Senior)
+  - Tech stack-specific questioning
+
+- 📱 **Responsive UI/UX**
+  - Modern interface using Tailwind CSS and shadcn/ui
+
+## ⚙️ Tech Stack
+
+### Frontend
+- React 19
+- Tailwind CSS
+- shadcn/ui + Radix UI
+
+### Backend / Services
+- Firebase (Auth + Firestore + Hosting)
+- Open Router 4 (Evaluation and Feedback)
+
+### Tools
+- ESLint
+- PostCSS
+- Turbopack
+
+## 🔁 Interview Flow
+
+1. User logs in via Firebase  
+2. Selects role, experience level, and tech stack  
+3. AI interviewer starts voice conversation  
+4. User responds verbally  
+5. AI evaluates response using LLM  
+6. Feedback is generated instantly  
+7. Interview session is stored in database  
+
+
+## 🧠 Core System Design
+
+- LLM Engine (OpenRouter) → generates questions + evaluates answers  
+- Persistence Layer (Firebase) → stores sessions and user data  
+- Frontend Layer (ReactJS - for interactive UI)
+
+## 🎯 Use Cases
+
+- SDE interview preparation  
+- Behavioral + technical practice  
+- Communication improvement  
+- AI-based performance evaluation  
+
+## 🚀 Deployment
+- Vercel (Frontend)
+- Render (Backend)
+
+## 📜 License
+
+MIT License
